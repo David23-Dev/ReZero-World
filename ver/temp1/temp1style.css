@@ -1,0 +1,134 @@
+*
+{
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body
+{
+    background-color: rgb(32, 32, 32);
+}
+
+nav
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: black;
+    padding: 0px 30px;
+}
+
+#logo
+{
+    width: 100px;
+}
+
+#catalogo
+{
+    margin:0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 30px;
+}
+
+a>img
+{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    color: white;
+}
+
+#catalogo>section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transform: scale(1);
+    transition: .4s;
+}
+
+#catalogo>section:hover{
+    transform:scale(1.05);
+    transition: .4s;
+}
+
+.Etiqueta
+{
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 8px 0px 10px 0px;
+    padding:0% 3%;
+}
+
+section>.titulo
+{
+    color:white;
+    text-align: center;
+}
+
+#reproductor
+{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+iframe
+{
+    width: 80vw;
+    height: 45vw;
+}
+
+#botones
+{
+    display: flex;
+    gap: 10px;
+}
+
+#botones>button
+{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color:white;
+    transition: 0.5s;
+    height: 30px;
+    background: linear-gradient(rgb(255, 0, 255),rgb(204, 173, 255));
+    box-shadow: 5px 5px 20px rgb(255, 0, 255);
+    cursor: pointer;
+}
+
+#botones>button:hover
+{
+    background: white;
+    color: black;
+    box-shadow: 5px 5px 20px white;
+}
+
+#botones>button:active
+{
+    color: rgb(255, 0, 255);
+    transition: 0.1s;
+}
