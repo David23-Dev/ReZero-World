@@ -24,6 +24,18 @@ nav
     width: 100px;
 }
 
+.btnNav
+{
+    color: white;
+    transition: 0.1s;
+}
+
+.btnNav:hover
+{
+    color:rgb(250, 96, 255);
+    transition: 0.1s;
+}
+
 #catalogo
 {
     margin:0px 30px;
